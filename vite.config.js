@@ -14,6 +14,10 @@ const files = [];
 export default defineConfig(async ({ command }) => {
     const { needlePlugins, useGzip, loadConfig } = await import("@needle-tools/engine/plugins/vite/index.js");
     const needleConfig = await loadConfig();
+
+    if(!process.env.NEEDLE_CLOUD_TOKEN){
+        throw new Error("NEEDLE_CLOUD_TOKEN is not set in the environment variables.");
+    }
     return {
         plugins: [
             mkcert(),
