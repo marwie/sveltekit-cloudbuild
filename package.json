@@ -11,23 +11,24 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "dependencies": {
-	  "@needle-tools/engine": "npm:@needle-tools/engine@^3.48.0-experimental",
-	  "three": "npm:@needle-tools/three@^0.162.7"
-	},
+    "@needle-tools/engine": "npm:@needle-tools/engine@^3.48.0-experimental",
+    "three": "npm:@needle-tools/three@^0.162.7"
+  },
   "devDependencies": {
-	  "@needle-tools/helper": "^1.9.0",
-	  "@sveltejs/adapter-auto": "^2.0.0",
-	  "@sveltejs/adapter-static": "^2.0.2",
-	  "@sveltejs/kit": "^1.5.0",
-	  "@types/three": "0.162.0",
-	  "glob": "^10.2.5",
-	  "mdsvex": "^0.11.0",
-	  "svelte": "^4.1.2",
-	  "svelte-check": "^3.0.1",
-	  "typescript": "^5.0.4",
-	  "vite": "<= 4.3.9",
-	  "vite-plugin-compression": "^0.5.1",
-	  "vite-plugin-mkcert": "^1.16.0",
-	  "vite-plugin-static-copy": "^0.17.0"
-	}
+    "@needle-tools/helper": "^1.9.0",
+    "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/adapter-static": "^2.0.2",
+    "@sveltejs/kit": "^1.5.0",
+    "@types/three": "0.162.0",
+    "dotenv": "^16.4.5",
+    "glob": "^10.2.5",
+    "mdsvex": "^0.11.0",
+    "svelte": "^4.1.2",
+    "svelte-check": "^3.0.1",
+    "typescript": "^5.0.4",
+    "vite": "<= 4.3.9",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-mkcert": "^1.16.0",
+    "vite-plugin-static-copy": "^0.17.0"
+  }
 }

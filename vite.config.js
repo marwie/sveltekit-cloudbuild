@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
 import mkcert from 'vite-plugin-mkcert';
 
+import dotenv from "dotenv";
+dotenv.config();
 
 import { sveltekit } from '@sveltejs/kit/vite';
 
