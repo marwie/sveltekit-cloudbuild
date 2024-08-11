@@ -16,7 +16,10 @@ export default defineConfig(async ({ command }) => {
         plugins: [
             mkcert(),
             // useGzip(needleConfig) ? viteCompression({ deleteOriginFile: true }) : null,
-            needlePlugins(command, needleConfig),
+            needlePlugins(command, needleConfig, {
+                buildPipeline: {
+                }
+            }),
             viteStaticCopy({
                 targets: files.map((file) => {
                     return {
