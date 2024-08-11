@@ -20,6 +20,7 @@ export default defineConfig(async ({ command }) => {
             // useGzip(needleConfig) ? viteCompression({ deleteOriginFile: true }) : null,
             needlePlugins(command, needleConfig, {
                 buildPipeline: {
+                    accessToken: process.env.NEEDLE_CLOUD_TOKEN,
                 }
             }),
             viteStaticCopy({
