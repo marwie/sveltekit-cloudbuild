@@ -17,6 +17,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+# Add environment variables
+env:
+  NEEDLE_CLOUD_TOKEN: ${{ secrets.NEEDLE_CLOUD_TOKEN }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
