@@ -25,6 +25,7 @@ export default defineConfig(async ({ command }) => {
             needlePlugins(command, needleConfig, {
                 buildPipeline: {
                     accessToken: process.env.NEEDLE_CLOUD_TOKEN,
+                    verbose: true,
                 }
             }),
             viteStaticCopy({
