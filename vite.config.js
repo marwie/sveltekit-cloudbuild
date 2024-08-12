@@ -23,6 +23,7 @@ export default defineConfig(async ({ command }) => {
             mkcert(),
             // useGzip(needleConfig) ? viteCompression({ deleteOriginFile: true }) : null,
             needlePlugins(command, needleConfig, {
+                noCopy: true,
                 buildPipeline: {
                     accessToken: process.env.NEEDLE_CLOUD_TOKEN,
                     verbose: true,
