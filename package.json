@@ -11,7 +11,7 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "dependencies": {
-    "@needle-tools/engine": "npm:@needle-tools/engine@^3.48.0-experimental",
+    "@needle-tools/engine": "npm:@needle-tools/engine@^3.48.0-experimental.1",
     "three": "npm:@needle-tools/three@^0.162.7"
   },
   "devDependencies": {
