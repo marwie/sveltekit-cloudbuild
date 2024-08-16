@@ -6,6 +6,7 @@
     "start": "npm run dev",
     "dev": "vite dev --host",
     "build": "vite build -- --production",
+    "deploy": "npx --yes needle-cloud@latest deploy ./build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
